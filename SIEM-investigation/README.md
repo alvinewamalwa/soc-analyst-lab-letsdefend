@@ -22,9 +22,7 @@ A call-to-action button labeled “Redeem Now” was visible within the email co
 
 The email also contained a password-protected ZIP attachment named “free-coffee.zip”, with the password provided as “infected”.
 
- ![Description](/SIEM-investigation/screenshots/phishing-email-1.png)
-![Description](/SIEM-investigation/screenshots/phishing-email-2.png)
-![Description](/SIEM-investigation/screenshots/phishing-email-3.png)
+ ![Description](/SIEM-investigation/screenshots/phishing-email-1.png)![Description](/SIEM-investigation/screenshots/phishing-email-2.png)![Description](/SIEM-investigation/screenshots/phishing-email-3.png)
 
 
 
