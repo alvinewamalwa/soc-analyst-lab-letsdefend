@@ -1,4 +1,4 @@
-<img width="223" height="116" alt="image" src="https://github.com/user-attachments/assets/f4ac9ca3-48a8-452a-bc80-ce3c6d5c997c" /># SIEM Investigation – Phishing Alert Case (Event ID 257)
+# SIEM Investigation – Phishing Alert Case (Event ID 257)
 
 This folder documents a SOC investigation I performed on a phishing alert generated in the LetsDefend SIEM platform. The case involved analyzing a deceptive email, identifying malicious indicators, and reviewing endpoint activity to determine potential compromise.
 
