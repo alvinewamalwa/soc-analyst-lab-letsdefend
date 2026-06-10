@@ -50,7 +50,7 @@ I went ahead and viewed the raw log of each given entry.
 
 
 
-## Entry-3 Log: Here the process fails to establish connection IP address 127.0.0.1
+## Entry-3 Log: Here the process fails to establish connection with IP address 127.0.0.1
 
 ![Description](/SIEM-investigation/screenshots/entry3-log.png)
 
