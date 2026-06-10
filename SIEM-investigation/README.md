@@ -1,4 +1,4 @@
-# SIEM Investigation – Phishing Alert Case (Event ID 257)
+<img width="223" height="116" alt="image" src="https://github.com/user-attachments/assets/f4ac9ca3-48a8-452a-bc80-ce3c6d5c997c" /># SIEM Investigation – Phishing Alert Case (Event ID 257)
 
 This folder documents a SOC investigation I performed on a phishing alert generated in the LetsDefend SIEM platform. The case involved analyzing a deceptive email, identifying malicious indicators, and reviewing endpoint activity to determine potential compromise.
 
@@ -25,6 +25,29 @@ The email also contained a password-protected ZIP attachment named “free-coffe
  ![Description](/SIEM-investigation/screenshots/phishing-email-1.png)![Description](/SIEM-investigation/screenshots/phishing-email-2.png)![Description](/SIEM-investigation/screenshots/phishing-email-3.png)
 
 
+I navigated to the Log Management tab and used the search functionality to filter on the log data and focused on entries relevant to this investigation. By searching for the host's IP address I could view the logs and network connections associated with the host. I analyzed the logs from the relevant time period.
+
+By looking at the source and destination addresses as shown below, it can be seen that there is an outbound connection.
+![Description](/SIEM-investigation/screenshots/src-dest-addresses.png)
+
+I went ahead and viewed the raw log of each given entry:
+
+Entry-1 Log:
+![Description](/SIEM-investigation/screenshots/entry1-log.png)
+This log shows when Felix downloaded the email attachment.
+
+Entry-2 Log:
+![Description](/SIEM-investigation/screenshots/entry2-log.png)
+This log shows the Coffee.exe process communicates with a suspicious IP address through port 3451.
+
+
+Entry-3 Log:
+![Description](/SIEM-investigation/screenshots/entry3-log.png)
+Here the process fails to establish connection IP address 127.0.0.1
+
+
+
+
 
 ## Investigation Summary
 
@@ -32,16 +55,21 @@ I analyzed the attachment using a sandbox environment known as Hybrid Analysis a
 
 I used Threat Intel to validate indicators associated with the file and infrastructure.
 
+## Response Action
+To prevent more hosts from being affected, I contained the user felix and the other host with IP address 37.120.233.226 and removed the malicious email from the user's mailbox, I also ensured that the sender address and associated domain are blocked at the email gateway to prevent further delivery attempts. I went ahead and searched for similar emails across the organization to identify potential exposure to other users and  scanned the affected host for any residual malicious files or artifacts by going through all the processes runned by the two affected hosts after opening the malicious file, fortunately all the processes were safe.
 
 
-My Playbook
+
+## My Playbook
 
 After successfully investigating the alert and closing the case, I came up with my own playbook `https://app.letsdefend.io/case-management/casedetail/alvine12w/257` about the case.
-Playbook Note
-The alert (Event ID 257) was triggered by rule SOC282 indicating a potential phishing email. Analysis of the email metadata shows that it originated from SMTP IP 103.80.134.63 with sender address free@coffeeshooop.com, which appears suspicious and potentially spoofed. I entered the sender's email address on the email security intercface and found the subject "Free Coffee Voucher" suggests a social engineering attempt to lure the recipient. I identified an attachment(freecoffee.zip) in the email, and it is evident that the user interacted with the malicious file by opening it causing password infection on the host. Based on the analysis, the alert is classified as a phishing attempt with a confirmed compromise of password infection. To prevent other hosts from being affected, I contained the the user endpoint and removed the malicious email from the user's mailbox, I also ensured that the sender address and associated domain are blocked at the email gateway to prevent further delivery attempts. I also searched for similar emails across the organization to identify potential exposure to other users. I also scanned the affected host for any residual malicious files or artifacts by going through all the processes runned by the host after opening the malicious file, fortunately all the processes were safe
+
+## Playbook Note
+The alert (Event ID 257) was triggered by rule SOC282 indicating a potential phishing email. Analysis of the email metadata shows that it originated from SMTP IP 103.80.134.63 with sender address free@coffeeshooop.com, which appears suspicious and potentially spoofed. I entered the sender's email address on the email security intercface and found the subject "Free Coffee Voucher" suggests a social engineering attempt to lure the recipient. I identified an attachment(freecoffee.zip) in the email, and it is evident that the user interacted with the malicious file by opening it causing password infection on the host. Based on the analysis, the alert is classified as a phishing attempt with a confirmed compromise of password infection. To prevent more hosts from being affected, I contained the user felix and the other host with IP address 37.120.233.226 and removed the malicious email from the user's mailbox, I also ensured that the sender address and associated domain are blocked at the email gateway to prevent further delivery attempts. I went ahead and searched for similar emails across the organization to identify potential exposure to other users and  scanned the affected host for any residual malicious files or artifacts by going through all the processes runned by the two affected hosts after opening the malicious file, fortunately all the processes were safe.
 
 
-## Remediation and Response Actions
+
+## Recommended Remediation
 
 Following the investigation of the phishing alert (Event ID 257), the following remediation and response actions are recommended based on the findings.
 
