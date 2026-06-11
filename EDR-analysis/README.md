@@ -18,9 +18,9 @@ EDR solutions also allow threat hunting using Indicators of Compromise (IOCs) su
 
 ## Objective 1: Process Investigation (Roberto Host)
 
-The first objective required me to investigate a device with the hostname “Roberto” to determine the full command used to execute a “Ps1.hta” file.
+The first objective required me to investigate a device with the hostname “Roberto” to determine the full command used to execute a “Ps1.hta” file, which is a malicious file.
 
-I navigated through the list of running processes associated with the host and analyzed them individually. During this investigation, I identified the process associated with mshta.exe and reviewed its execution path and command-line arguments, which revealed the complete execution command.
+I navigated through the list of running processes associated with the host and analyzed them individually. During this investigation, I identified the process associated with mshta.exe and reviewed its execution path and command-line arguments, which revealed the complete execution command. This clearly indicates that the host is compromised.
 
 The relevant result is shown in the screenshot:
 ![EDR process analysis showing mshta.exe execution on host Roberto](/EDR-analysis/screenshots/EDR-analysis.png)
