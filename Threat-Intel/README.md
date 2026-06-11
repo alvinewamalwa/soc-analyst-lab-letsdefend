@@ -1,5 +1,9 @@
 # Threat Intelligence Investigation
 
+A Threat Intelligence Feed is data (such as malware hashes, C2 (Command&Control) domain/IP addresses etc.) provided by a third party company.
+
+
+
 This folder documents my work with the Threat Intelligence interface on the LetsDefend platform. The objective of this exercise was to understand how threat intelligence feeds support SOC investigations and how to analyze indicators of compromise (IOCs).
 
 ## Overview
