@@ -45,11 +45,12 @@ This time gap made it unreliable to depend solely on timestamp-based filtering.
 
 
 
-* I identified a suspicious PowerShell command in the terminal history
-* The command appeared obfuscated, indicating possible attacker activity
+* I identified two suspicious PowerShell commands in the terminal history
+  screenshot: ![Alert Details](/SIEM-investigations/Malicious-File-Alert/screenshots/Obfuscated-Commands.png)
+* The commands appeared obfuscated, indicating possible attacker activity
 * There were no logs available after March 7, which may indicate logging gaps or endpoint inactivity
 
-Video Evidence: Investigating-Endpoint.mp4
+ The detailed command: https://github.com/user-attachments/assets/a620b130-30a3-424f-9452-540e7e01c97e
 
 ---
 
