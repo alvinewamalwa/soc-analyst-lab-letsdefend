@@ -88,7 +88,7 @@ Although the file was blocked at the time of the alert, prior activity suggests 
 * The malicious file download attempt was blocked by the SIEM system
 * I proceeded to contain the affected endpoint as a precautionary measure
 * The threat was handled in line with containment procedures, preventing further risk to the system
-
+![Alert Details](/SIEM-investigations/Malicious-File-Alert/screenshots/Host-Contained.png)
 ---
 
 ## Outcome
