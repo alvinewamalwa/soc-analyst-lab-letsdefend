@@ -86,7 +86,7 @@ Following the investigation of the phishing alert (Event ID 257), the following 
 
 ### 1. Sender and Infrastructure Blocking
 
-* Block the sender email address `free@coffeeshooop.com`.
+* Block the sender email address `free@coffeeshooop.com`
 * Block or monitor the associated SMTP IP address `103.80.134.63` in security controls.
 * Add indicators of compromise (IOCs) to threat intelligence and email filtering systems.
 
