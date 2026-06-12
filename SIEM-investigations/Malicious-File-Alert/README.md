@@ -50,7 +50,7 @@ This time gap made it unreliable to depend solely on timestamp-based filtering.
 * The commands appeared obfuscated, indicating possible attacker activity
 * There were no logs available after March 7, which may indicate logging gaps or endpoint inactivity
 
- The detailed command: ![Description](https://github.com/user-attachments/assets/a620b130-30a3-424f-9452-540e7e01c97e)
+ The detailed command: https://github.com/user-attachments/assets/a620b130-30a3-424f-9452-540e7e01c97e
 
 ---
 
