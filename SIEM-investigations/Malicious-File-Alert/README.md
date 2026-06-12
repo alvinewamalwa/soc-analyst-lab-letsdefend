@@ -1,4 +1,4 @@
-<img width="941" height="357" alt="image" src="https://github.com/user-attachments/assets/704f74cf-7aca-465a-9a19-aa3e17ee56a1" /><img width="959" height="356" alt="image" src="https://github.com/user-attachments/assets/534e1e07-1042-455d-8746-fc1607d6964f" /># SIEM Investigation – Malicious File Alert
+
 
 ## Alert Overview
 
