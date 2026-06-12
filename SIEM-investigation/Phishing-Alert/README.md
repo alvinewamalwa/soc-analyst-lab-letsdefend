@@ -8,7 +8,7 @@ The alert was triggered by rule SOC282 – Phishing Alert: Deceptive Mail Detect
 
 I began the investigation by reviewing the full alert details to understand the context, including sender information, SMTP IP address, recipient, and email classification as shown below.
 
-![Description](/SIEM-investigation/screenshots/detailed-info-257.png)
+![Description](/SIEM-investigation/Phishing-Alert/screenshots/detailed-info-257.png)
 
 
 
