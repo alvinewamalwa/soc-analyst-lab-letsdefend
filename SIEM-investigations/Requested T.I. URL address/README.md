@@ -16,7 +16,7 @@ In this investigation, I analyzed a high-severity alert triggered by a requested
 
 From the initial alert review, I noted that the connection was allowed despite being flagged as high severity, which required further validation.
 
-**Screenshot:** `Alert-Details.png`
+**Screenshot:** ![Alert Details](./screenshots/Alert-Details.png)
 
 ---
 
@@ -29,7 +29,7 @@ I began by analyzing the requested URL using VirusTotal.
 
 Since VirusTotal results are not always definitive, especially with low detection rates, I treated this as **inconclusive** and proceeded with deeper investigation.
 
-**Screenshot:** `Virus-Total-Results.png`
+**Screenshot:** ![VirusTotal Results](./screenshots/Virus-Total-Results.png)
 
 ---
 
@@ -52,7 +52,7 @@ I focused on this event for deeper inspection.
 
 This indicated no clear signs of malicious communication.
 
-**Screenshot:** `Events.png`
+**Screenshot:** ![Events](./screenshots/Events.png)
 
 ---
 
@@ -68,7 +68,7 @@ Next, I examined the endpoint for any signs of compromise.
 
 The endpoint showed **no indicators of compromise (IOCs)**.
 
-**Screenshot:** `Endpoint-Analysis.png`
+**Screenshot:** ![Endpoint Analysis](./screenshots/Endpoint-Analysis.png)
 
 ---
 
@@ -86,8 +86,7 @@ The analysis revealed a **3-step redirect chain**:
 * **HTTP 301** indicates a permanent redirection to a new location
 * Inspection of the HTTP response body and associated metadata revealed no anomalies or obfuscated code.
 
-**Screenshot:** `301-Redirect.png`
-
+**Screenshot:** ![301 Redirect](./screenshots/301-Redirect.png)
 ---
 
 #### Hop 2 — HTTP 302 (Temporary Redirect)
@@ -97,8 +96,7 @@ The analysis revealed a **3-step redirect chain**:
 * Behavior observed was consistent with normal web routing
 * A review of the payload and metadata at this stage showed standard routing behavior with no malicious artifacts.
 
-**Screenshot:** `302-Redirect.png`
-
+**Screenshot:** ![302 Redirect](./screenshots/302-Redirect.png)
 ---
 
 #### Hop 3 — HTTP 200 (OK)
@@ -113,7 +111,7 @@ I verified that:
 * It has over **100M+ downloads**
 * No signs of malicious intent or tampering were observed
 
-**Screenshot:** `200-Redirect.png`
+**Screenshot:** `![200 Redirect](./screenshots/200-Redirect.png)
 
 ---
 
