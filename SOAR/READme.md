@@ -31,7 +31,10 @@ I learned that playbooks help standardize the investigation process across the S
 Playbooks also improve collaboration and consistency, as all team members follow the same investigation procedures, reducing the risk of incomplete or inconsistent analysis.
 
 ## Below are playbooks that i have created after successfully investigating on the alerts
-i) phishing alert `https://app.letsdefend.io/case-management/casedetail/alvine12w/257`
+i) phishing alert                                https://app.letsdefend.io/case-management/casedetail/alvine12w/257
+ii) malicious file alert                         https://app.letsdefend.io/case-management/casedetail/alvine12w/76
+iii) Requested T.I URL address investigation     https://app.letsdefend.io/case-management/casedetail/alvine12w/75  
+
 
 ## Conclusion
 
