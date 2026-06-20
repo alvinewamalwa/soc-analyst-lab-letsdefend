@@ -38,6 +38,8 @@ Playbooks also improve collaboration and consistency, as all team members follow
 
 ## iii) Requested T.I URL address investigation     https://app.letsdefend.io/case-management/casedetail/alvine12w/75  
 
+## iv) Suspicious XLS file detected https://app.letsdefend.io/case-management/casedetail/alvine12w/77
+
 
 ## Conclusion
 
