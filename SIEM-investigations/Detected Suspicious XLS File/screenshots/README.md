@@ -124,7 +124,8 @@ The raw logs associated with these connections contained suspicious data pattern
 
 To prevent further spread, I **contained the affected endpoint (172.16.17.56)** via the EDR platform.
 
-**Screenshot:** ![EDR Containment Action performed on infected endpoint](screenshots/EDR.png)
+**Screenshot:**  ![Description](screenshots/EDR.png)
+
 ---
 
 ##  Conclusion
